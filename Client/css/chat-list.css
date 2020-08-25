@@ -1,0 +1,52 @@
+header .head-row {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative; }
+header .head-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+header span {
+  line-height: 36px;
+  font-weight: 450;
+  font-size: 20px; }
+
+.container {
+  margin-top: 20px; }
+  .container .chat-list li {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px; }
+  .container .chat-list-item {
+    padding: 10px 10px 10px 20px; }
+    .container .chat-list-item .list-item-left {
+      float: left; }
+    .container .chat-list-item .list-item-right {
+      margin-left: 20px;
+      float: left; }
+    .container .chat-list-item .user-head-logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; }
+    .container .chat-list-item .item-right-01 {
+      line-height: 26px; }
+      .container .chat-list-item .item-right-01 .user-name {
+        font-size: 18px; }
+    .container .chat-list-item .item-right-02 {
+      line-height: 20px; }
+      .container .chat-list-item .item-right-02 .last-message {
+        display: inline-block;
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: bottom; }
+  .container .active {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 15px; }
+
+/*# sourceMappingURL=chat-list.css.map */

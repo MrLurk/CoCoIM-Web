@@ -44,7 +44,7 @@
    * Remove the margin in all browsers.
    */
   
-a{text-decoration:none; }
+a{text-decoration:none;-webkit-tap-highlight-color:transparent; }
 a:link{text-decoration:none;   /* 指正常的未被访问过的链接*/}
 a:visited{text-decoration:none; /*指已经访问过的链接*/ }
 a:hover{text-decoration:none;/*指鼠标在链接*/}

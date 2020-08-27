@@ -3,7 +3,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 2;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 header .head-row {
   text-align: center;
@@ -77,7 +77,7 @@ footer {
   width: 100%;
   bottom: 0;
   z-index: 2;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 footer div {
   text-align: center;

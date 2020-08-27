@@ -3,8 +3,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 2;
-    // background-color: rgba(255, 255, 255, 0.8);
-    background-color: #f5f5f5;
+    background-color: white;
 
     .head-row {
         text-align: center;
@@ -34,6 +33,7 @@ header {
 .container {
     margin-top: 80px;
     margin-bottom: 60px;
+
     .chat-list {
         li {
             margin-left: 20px;
@@ -44,6 +44,7 @@ header {
 
     .chat-list-item {
         padding: 10px 10px 10px 20px;
+
         .list-item-left {
             float: left;
         }
@@ -71,7 +72,7 @@ header {
             line-height: 20px;
 
             .last-message {
-                display:inline-block;
+                display: inline-block;
                 max-width: 100px;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -80,34 +81,39 @@ header {
             }
         }
     }
-    .active{
+
+    .active {
         background-color: rgba(0, 0, 0, .05);
         border-radius: 15px;
     }
 }
 
-footer{
+footer {
     position: fixed;
     width: 100%;
     bottom: 0;
     z-index: 2;
     // background-color: rgba(255, 255, 255, 0.8);
-    background-color: #f5f5f5;
-    div{
+    background-color: white;
+
+    div {
         text-align: center;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
     }
-    img{
+
+    img {
         width: 32px;
         height: 32px;
     }
-    .nav-chat{
+
+    .nav-chat {
         margin-left: 18%;
         float: left;
     }
-    .nav-users{
+
+    .nav-users {
         margin-right: 18%;
         float: right;
     }

@@ -1,0 +1,62 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background-color: #f5f5f5;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+header div {
+  float: left;
+}
+header .head-back {
+  width: 24x;
+  height: 24px;
+  margin-top: 6px;
+}
+header .head-logo {
+  width: 36x;
+  height: 36px;
+  border-radius: 50%;
+}
+header span {
+  margin-left: 12px;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.container {
+  margin-top: 60px;
+}
+.container .message-list {
+  font-size: 10px;
+}
+.container .message-list p {
+  line-height: 30px;
+  text-align: center;
+}
+.container .message-list .form-li, .container .message-list .to-li {
+  margin-top: 20px;
+}
+.container .message-list .form-li .message-form-logo {
+  width: 36x;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: 20px;
+  display: block;
+  float: left;
+}
+.container .message-list .form-li .message {
+  background-color: #0084ff;
+  max-width: 60%;
+  margin-left: 10px;
+  font-size: 14px;
+  padding: 0 10px;
+  color: white;
+  border-radius: 8px;
+  line-height: 26px;
+  display: block;
+  float: left;
+}

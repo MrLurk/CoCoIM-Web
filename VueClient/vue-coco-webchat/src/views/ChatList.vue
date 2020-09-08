@@ -7,290 +7,23 @@
   </header>
   <div class="container container-1">
     <ul class="chat-list">
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix active">
+      <li
+        v-for="item in chatLists"
+        :key="item.userName"
+        class="chat-list-li"
+        @click="this.gotoChat()"
+      >
+        <div class="chat-list-item clearfix" :class="item.isActive?'active':''">
           <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
+            <img class="user-head-logo" :src="item.headLogo" />
           </div>
           <div class="list-item-right">
             <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
+              <span class="user-name">{{item.userName}}</span>
             </div>
             <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">星期一</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">2020-8-24</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">20:24:52</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix active">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">星期一</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">2020-8-24</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">20:24:52</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix active">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">星期一</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">2020-8-24</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">20:24:52</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix active">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">星期一</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">2020-8-24</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">20:24:52</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix active">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">星期一</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">2020-8-24</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">20:24:52</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix active">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">星期一</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">2020-8-24</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="chat-list-li" @click="this.gotoChat()">
-        <div class="chat-list-item clearfix">
-          <div class="list-item-left">
-            <img class="user-head-logo" src="../assets/images/headlogo.jpg" />
-          </div>
-          <div class="list-item-right">
-            <div class="item-right-01">
-              <span class="user-name">EzawaGin</span>
-            </div>
-            <div class="item-right-02">
-              <span class="last-message">你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图</span>
-              <span class="last-message-time">20:24:52</span>
+              <span class="last-message">{{item.lastMessage}}</span>
+              <span class="last-message-time">{{item.lastMessageTime}}</span>
             </div>
           </div>
         </div>
@@ -321,6 +54,124 @@
 <script>
 export default {
   name: "ChatList",
+  data() {
+    return {
+      chatLists: [
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "星期三",
+          isActive: false
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "2020-8-24",
+          isActive: true
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "星期三",
+          isActive: false
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "2020-8-24",
+          isActive: true
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "星期三",
+          isActive: false
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "2020-8-24",
+          isActive: true
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "星期三",
+          isActive: false
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "2020-8-24",
+          isActive: true
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "星期三",
+          isActive: false
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "2020-8-24",
+          isActive: true
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "星期三",
+          isActive: false
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "2020-8-24",
+          isActive: true
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "星期三",
+          isActive: false
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "2020-8-24",
+          isActive: true
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "星期三",
+          isActive: false
+        },
+        {
+          headLogo: require("../assets/images/headlogo.jpg"),
+          userName: "EzawaGin",
+          lastMessage: "你发送了贴图发送了贴图发送了贴图发送了贴图发送了贴图",
+          lastMessageTime: "2020-8-24",
+          isActive: true
+        }
+      ]
+    };
+  },
   methods: {
     gotoChat: function() {
       this.$router.push("/Chat");
